@@ -4,8 +4,8 @@ const Activities = () => {
   const [activities, setActivities] = useState([]);
   const codespace = process.env.REACT_APP_CODESPACE_NAME;
   const endpoint = codespace
-    ? `https://${codespace}-8000.app.github.dev/activities/`
-    : 'http://localhost:8000/activities/';
+    ? `https://${codespace}-8000.app.github.dev/api/activities/`
+    : 'http://localhost:8000/api/activities/';
 
   useEffect(() => {
     console.log('Fetching Activities from:', endpoint);

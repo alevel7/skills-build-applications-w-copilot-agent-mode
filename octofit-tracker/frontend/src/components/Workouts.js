@@ -4,8 +4,8 @@ const Workouts = () => {
   const [workouts, setWorkouts] = useState([]);
   const codespace = process.env.REACT_APP_CODESPACE_NAME;
   const endpoint = codespace
-    ? `https://${codespace}-8000.app.github.dev/workouts/`
-    : 'http://localhost:8000/workouts/';
+    ? `https://${codespace}-8000.app.github.dev/api/workouts/`
+    : 'http://localhost:8000/api/workouts/';
 
   useEffect(() => {
     console.log('Fetching Workouts from:', endpoint);

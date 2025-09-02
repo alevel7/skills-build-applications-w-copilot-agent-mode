@@ -4,8 +4,8 @@ const Leaderboard = () => {
   const [leaderboard, setLeaderboard] = useState([]);
   const codespace = process.env.REACT_APP_CODESPACE_NAME;
   const endpoint = codespace
-    ? `https://${codespace}-8000.app.github.dev/leaderboard/`
-    : 'http://localhost:8000/leaderboard/';
+    ? `https://${codespace}-8000.app.github.dev/api/leaderboard/`
+    : 'http://localhost:8000/api/leaderboard/';
 
   useEffect(() => {
     console.log('Fetching Leaderboard from:', endpoint);
