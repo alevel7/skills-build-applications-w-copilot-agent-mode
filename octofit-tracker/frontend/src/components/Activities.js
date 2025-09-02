@@ -9,12 +9,11 @@ const Activities = () => {
 
   useEffect(() => {
     console.log('Fetching Activities from:', endpoint);
-    fetch(endpoint)
-      .then(res => res.json())
-      .then(data => {
-        const results = data.results || data;
-        setActivities(results);
         console.log('Activities data:', results);
+      })
+      .catch(error => {
+        console.error('Error fetching activities:', error);
+        setActivities([]);
       });
   }, [endpoint]);
 
