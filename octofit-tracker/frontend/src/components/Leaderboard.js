@@ -9,12 +9,11 @@ const Leaderboard = () => {
 
   useEffect(() => {
     console.log('Fetching Leaderboard from:', endpoint);
-    fetch(endpoint)
-      .then(res => res.json())
-      .then(data => {
-        const results = data.results || data;
-        setLeaderboard(results);
         console.log('Leaderboard data:', results);
+      })
+      .catch(error => {
+        console.error('Error fetching leaderboard:', error);
+        setLeaderboard([]);
       });
   }, [endpoint]);
 
