@@ -88,7 +88,7 @@ DATABASES = {
             'username': '',
             'password': '',
             'authSource': '',
-            'authMechanism': '',
+            # 'authMechanism': 'PLAIN',
         },
     }
 }
