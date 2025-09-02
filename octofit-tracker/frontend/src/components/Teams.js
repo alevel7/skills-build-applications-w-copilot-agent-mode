@@ -9,12 +9,11 @@ const Teams = () => {
 
   useEffect(() => {
     console.log('Fetching Teams from:', endpoint);
-    fetch(endpoint)
-      .then(res => res.json())
-      .then(data => {
-        const results = data.results || data;
-        setTeams(results);
         console.log('Teams data:', results);
+      })
+      .catch(error => {
+        console.error('Error fetching teams:', error);
+        setTeams([]);
       });
   }, [endpoint]);
 
