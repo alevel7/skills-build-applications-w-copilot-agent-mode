@@ -15,7 +15,12 @@ const Workouts = () => {
         const results = data.results || data;
         setWorkouts(results);
         console.log('Workouts data:', results);
+      })
+      .catch(error => {
+        console.error('Error fetching activities:', error);
+        setWorkouts([]);
       });
+      ;
   }, [endpoint]);
 
   return (
