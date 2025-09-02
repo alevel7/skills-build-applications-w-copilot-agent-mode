@@ -1,0 +1,98 @@
+
+.App {
+  text-align: center;
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  min-height: 100vh;
+}
+
+.App-logo {
+  height: 60px;
+  margin-right: 16px;
+  vertical-align: middle;
+}
+
+.navbar {
+  background: linear-gradient(90deg, #007bff 0%, #00c6ff 100%);
+  color: #fff;
+}
+.navbar-brand, .nav-link {
+  color: #fff !important;
+  font-weight: 600;
+}
+.navbar-brand img {
+  height: 40px;
+  margin-right: 8px;
+}
+
+.card-title, h2, h1 {
+  color: #007bff;
+  font-weight: 700;
+}
+
+.table {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.table-dark th {
+  background: #007bff !important;
+  color: #fff !important;
+}
+.btn {
+  border-radius: 20px;
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(0,123,255,0.15);
+}
+.btn-success {
+  background: linear-gradient(90deg, #28a745 0%, #218838 100%);
+  color: #fff;
+}
+.btn-info {
+  background: linear-gradient(90deg, #17a2b8 0%, #138496 100%);
+  color: #fff;
+}
+.btn-warning {
+  background: linear-gradient(90deg, #ffc107 0%, #e0a800 100%);
+  color: #fff;
+}
+.btn-primary {
+  background: linear-gradient(90deg, #007bff 0%, #0056b3 100%);
+  color: #fff;
+}
+.btn-danger {
+  background: linear-gradient(90deg, #dc3545 0%, #c82333 100%);
+  color: #fff;
+}
+.card {
+  margin-bottom: 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+}
+.App-link {
+  color: #007bff;
+  text-decoration: underline;
+}
+.table-bordered th, .table-bordered td {
+  border: 1px solid #007bff !important;
+}
+.modal-content {
+  border-radius: 16px;
+}
+.form-control {
+  border-radius: 12px;
+  border: 1px solid #007bff;
+}
+.form-label {
+  color: #007bff;
+  font-weight: 600;
+}
+.form-check-input:checked {
+  background-color: #007bff;
+}
+.form-check-label {
+  color: #007bff;
+}
+.App-favicon {
+  width: 32px;
+  height: 32px;
+}
